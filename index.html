@@ -38,7 +38,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -49,15 +49,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <!-- section 2/9-->  <a class="navbar-brand" href="#">Danth Care</a>
+        <!-- section 2/9image-->  <a class="navbar-brand" href="#jumbotron">DANTH CARE</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">HOME</a></li>
+            <li><a href="#jumbotron">HOME</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#contact">TESTIMONIALS</a></li>
 
           </ul>
         </div><!--/.nav-collapse -->
@@ -65,16 +65,18 @@
     </nav>
 
 
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div id="jumbotron" class="jumbotron">
       <div class="container">
         <h1>Welcome to Danth Care!</h1>
         <p>Our mission is to provide <strong>professional dental services</strong> that are technologically current, with a commitment to excellence. Every <strong>patient is important</strong> to me. Our motto is that every patient is treated carefully with special attention to their comfort, their time, and their needs. We strive to be of value to our patients with a goal to exceed their expectations.</p>
-        <p><a class="btn btn-danger btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfWTzaqjtYN6nv_mcc4sU05NcMd-Ll-xooNF7L1ZIkWjDzR-Q/viewform?usp=sf_link" target="_blank"role="button">Book An Appointment &raquo;</a></p>
+        <p><a class="btn btn-danger btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfWTzaqjtYN6nv_mcc4sU05NcMd-Ll-xooNF7L1ZIkWjDzR-Q/viewform?usp=sf_link" target="_blank"role="button">Request Appointment &raquo;</a></p>
       </div>
     </div>
+
     <div id="services">
-    <div class="container homepage"s>
+    <div class="container homepage">
       <h2>SERVICES</h2>
       <hr>
       <div class="row">
@@ -85,8 +87,25 @@
           </span>
           <h3>CROWNS</h3>
           <p>A dental crown restores a tooth's shape, size, and strength. It fully encases the visible portion of your tooth or dental implant. </p>
-          <p><a class="btn btn-default" href="#" target="_blank" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Crowns</h4>
+                </div>
+                <div class="modal-body">
+                  Add info here
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="col-md-4">
         <span class="fa-stack fa-4x">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -94,8 +113,26 @@
           </span>
           <h3>ROOT CANAL</h3>
           <p>An endodontic treatment saves a severely injured, cracked, or decayed tooth when its pulp becomes inflamed or infected. If it is not treated promptly, pain or a tooth abscess results. Endodontic treatment is also known as a "root canal." </p>
-          <p><a class="btn btn-default" href="#" target="_blank" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">ROOT CANAL</h4>
+            </div>
+            <div class="modal-body">
+              This is a modal body for root canal
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
        </div>
+
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -104,12 +141,209 @@
           <h3>FILLINGS</h3>
           <p>A filling repairs and restores the surface of a tooth that has been damaged by decay, fracture, or wear.
           </p>
-          <p><a class="btn btn-default" href="#" target="_blank" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+      </div>
         </div>
       </div>
       </div>
       </div>
-      
+
+      <div class="container homepage">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3>GUM DISEASES</h3>
+          <p>A dental crown restores a tooth's shape, size, and strength. It fully encases the visible portion of your tooth or dental implant. </p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Crowns</h4>
+                </div>
+                <div class="modal-body">
+                  Add info here
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3>ORAL SURGERY</h3>
+          <p>An endodontic treatment saves a severely injured, cracked, or decayed tooth when its pulp becomes inflamed or infected. If it is not treated promptly, pain or a tooth abscess results. Endodontic treatment is also known as a "root canal." </p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user-md fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3>TEETH WHITENINGS</h3>
+          <p>A filling repairs and restores the surface of a tooth that has been damaged by decay, fracture, or wear.
+          </p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+      </div>
+        </div>
+      </div>
+      </div>
+      </div>
+        
+      </div>
+
+      <div class="container homepage">
+        
+        <div class="row">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3>DENTAL IMPLANTS </h3>
+          <p>A dental crown restores a tooth's shape, size, and strength. It fully encases the visible portion of your tooth or dental implant. </p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Crowns</h4>
+                </div>
+                <div class="modal-body">
+                  Add info here
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3>WISDOM TEETH REMOVAL</h3>
+          <p>An endodontic treatment saves a severely injured, cracked, or decayed tooth when its pulp becomes inflamed or infected. If it is not treated promptly, pain or a tooth abscess results. Endodontic treatment is also known as a "root canal." </p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-user-md fa-stack-1x fa-inverse"></i>
+          </span>
+          <h3>DIGITAL X-RAYS</h3>
+          <p>A filling repairs and restores the surface of a tooth that has been damaged by decay, fracture, or wear.
+          </p>
+          <p><a class="btn btn-default" href="#" target="_blank" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+      </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      </div>
+      <!-- one more-->
+
       <div id="about">
       <div class="container homepage">
 
@@ -121,13 +355,63 @@
       </div>
       </div>
 
+      <div id="testimonials">
+      <div class="container homepage">
+
+      <h2>TESTIMONIALS</h2>
+      <hr>
+      <p>“Your service and caring is truly reflected in the way you made me feel as if I were your one and only patient and a close family friend. Truly outstanding!!! Thanks!!!!!!”</p><p>  - Gauri</p>
+        
+
+      </div>
+      </div>
+
+      <div id="contact">
+      <div class="container homepage">
+
+      <h2>CONTACT</h2>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+            
+                <h3 style="line-height:20%;"><i class="fa fa-address-card" style="line-height:6%"></i> Clinic Address :</h3>               
+                <p style="margin-top:6%;line-height:35%">Utkarsha Nagar Opp Rameshwar Vidya Mandir, Datta Mandir Road</p>
+                <p>Vakola, Santacruz East, Mumbai 400047</p>
+                <br />
+                <br />
+                <h3 style="line-height:20%;"><i class="fa fa-phone fa-1x" style="line-height:6%"></i> Phone Number :</h3>
+                <p style="margin-top:6%;line-height:35%">+91 7506456096</p>
+                <br />
+                <br />
+                <h3 style="line-height:20%;"><i class="fa fa-envelope fa-1x" style="line-height:6%"></i> Email :</h3>
+                <p style="margin-top:6%;line-height:35%">subhedar_neha@yahoo.com</p>
+                <br />
+                <br />
+                <h3 style="line-height:20%;"><i class="fa fa-clock-o fa-1x" style="line-height:6%"></i> Office Hours :</h3>
+                <p style="margin-top:6%;line-height:35%">Mon-Sat 10:00AM-1:00PM and 6:00PM-9:00PM</p>
+            </div>
+       
+        <div class="col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.8737264920661!2d72.85211324749197!3d19.084474899162768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8553a270a95%3A0xbd606e11d3c708be!2sDant+Care!5e1!3m2!1sen!2sus!4v1490305849974" width="585" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
+      </div>
+     
      
       <footer>
       <div class="container">
         <p>&copy; 2017 Website by Pooja Sawant.</p>
       </div>
+         <div id="back-to-top">
+         
+       <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+       </div>
       </footer>
      
+
+
 
 
     <!-- Bootstrap core JavaScript
@@ -136,7 +420,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>
